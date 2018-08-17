@@ -1,0 +1,31 @@
+.formFooter{
+    float: right;
+    margin-top: 5px;
+}
+
+#btnSave{
+    margin-right: 5px;
+}
+
+.form-horizontal{
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+#formSection{
+    visibility: hidden;
+    text-align: left;
+}
+
+.paginator{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.search{
+    margin-left: 50px;
+}
+
+.btnAdd{
+    margin-right: 50px;
+}
