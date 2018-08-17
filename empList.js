@@ -17,7 +17,6 @@ app.get('/',function(req,res){
 
 app.get('/deleteRecord/:id',function(req,res){
 	var id= parseInt(req.params.id);
-	console.log(id);
     db.empList.remove({_id: id},1,function(err,data){
                       res.send(data);
                      })
