@@ -15,15 +15,15 @@ app.get('/',function(req,res){
 
 })
 
-app.get('/delete/:id',function(req,res){
+app.get('/deleteRecord/:id',function(req,res){
 	var id= parseInt(req.params.id);
+	console.log(id);
     db.empList.remove({_id: id},1,function(err,data){
                       res.send(data);
                      })
-
 })
 
-app.get('/addNewRecord/:data',function(req,res){
+app.get('/addRecord/:data',function(req,res){
 	var max= 2000,min=3000;
 	var id= Math.floor(Math.random()*(max-min+1)+min);
 	var data= JSON.parse(req.params.data);
